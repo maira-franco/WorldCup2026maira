@@ -60,9 +60,9 @@ fun DetalleView (
     Scaffold(
         topBar = {
             TopAppBar(
-                colors = TopAppBarDefaults.topAppBarColors(
-                    containerColor = Color.Green,
-                    titleContentColor = MaterialTheme.colorScheme.primary
+                colors = TopAppBarDefaults.topAppBarColors( // Cambio N°5, se arreglo los colores
+                    containerColor = MaterialTheme.colorScheme.primaryContainer,
+                    titleContentColor = MaterialTheme.colorScheme.onPrimaryContainer
                 ),
                 title = { Text(text = "Partidos") },
                 navigationIcon = {
