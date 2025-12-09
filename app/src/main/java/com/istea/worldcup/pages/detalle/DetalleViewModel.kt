@@ -22,7 +22,7 @@ class DetalleViewModel(
 
     fun ejecutar(intencion: DetalleIntencion) {
         when(intencion){
-            is DetalleIntencion.IrParaAtras -> { }
+            is DetalleIntencion.IrParaAtras -> irParaAtras()  //se corrigio el boton ir para atras 
             is DetalleIntencion.CargarContenido -> cargarContenido()
         }
     }
